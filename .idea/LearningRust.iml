@@ -8,12 +8,14 @@
       <sourceFolder url="file://$MODULE_DIR$/control_flow_strings/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/simple_types/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ownership_references/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/collections_enums/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/traits_structs/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/variables/target" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow_strings/target" />
       <excludeFolder url="file://$MODULE_DIR$/simple_types/target" />
       <excludeFolder url="file://$MODULE_DIR$/ownership_references/target" />
+      <excludeFolder url="file://$MODULE_DIR$/collections_enums/target" />
       <excludeFolder url="file://$MODULE_DIR$/traits_structs/target" />
     </content>
     <orderEntry type="inheritedJdk" />
