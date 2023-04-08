@@ -78,24 +78,19 @@ fn main() {
 
     let handle_a = thread::spawn(move ||{
         for msg in rx{
-            pause_ms(0);
-            println!("Message : {}", msg);
+            println!("Handle_a : {}", msg);
         }
     });
 
     let handle_b = thread::spawn(move || {
        for msg in rx2{
-           pause_ms(100);
-           println!("Message: {}", msg);
+           println!("Handle_b: {}", msg);
        }
     });
-
-    tx.send("Msg 1 1").unwrap();
-    tx.send("Msg 1 2").unwrap();
-
-
-    tx.send("Msg 2 1").unwrap();
-    tx.send("Msg 2 2").unwrap();
+    for i in 0..50{
+        tx.send(i).unwrap();
+        pause_ms(20);
+    }
 
     drop(tx);
 
